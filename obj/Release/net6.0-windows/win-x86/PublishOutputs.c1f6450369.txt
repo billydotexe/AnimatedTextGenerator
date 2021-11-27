@@ -1,0 +1,7 @@
+C:\Users\peppe\Desktop\prova1\AnimatedTextGenerator.pdb
+C:\Users\peppe\Desktop\prova1\D3DCompiler_47_cor3.dll
+C:\Users\peppe\Desktop\prova1\PenImc_cor3.dll
+C:\Users\peppe\Desktop\prova1\PresentationNative_cor3.dll
+C:\Users\peppe\Desktop\prova1\vcruntime140_cor3.dll
+C:\Users\peppe\Desktop\prova1\wpfgfx_cor3.dll
+C:\Users\peppe\Desktop\prova1\AnimatedTextGenerator.exe
