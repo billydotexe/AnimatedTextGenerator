@@ -4,10 +4,10 @@ you can download a builded version [here](http://billyexe.wtf/AnimatedTextGenera
 
 V0.1
 # Added:
--a basic gui
+•a basic gui
 
 # Customizable features:
--text
--colors
--speed
--delay
+•text
+•colors
+•speed
+•delay
