@@ -3,10 +3,10 @@ AnimatedTextGenerator is a simple gui tool to generate webpages with animated te
 you can download a builded version [here](http://billyexe.wtf/AnimatedTextGenerator/AnimatedTextGenerator.exe)
 
 V0.1
-#Added:
+# Added:
 -a basic gui
 
-#Customizable features:
+# Customizable features:
 -text
 -colors
 -speed
