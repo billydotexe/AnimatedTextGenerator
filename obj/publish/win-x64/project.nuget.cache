@@ -1,0 +1,24 @@
+{
+  "version": 2,
+  "dgSpecHash": "giOVKF7maiDZx8isqHjg/3/80atKi5gTob6e/wJfPo+TRSITVEA41+tfP0o2zzBHIh/89q/As42+8xjghWvQ/w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\peppe\\source\\repos\\AnimatedTextGenerator\\AnimatedTextGenerator\\AnimatedTextGenerator.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\peppe\\.nuget\\packages\\materialskin.updated\\0.2.2\\materialskin.updated.0.2.2.nupkg.sha512",
+    "C:\\Users\\peppe\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\6.0.0\\microsoft.netcore.app.runtime.win-x64.6.0.0.nupkg.sha512",
+    "C:\\Users\\peppe\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\6.0.0\\microsoft.windowsdesktop.app.runtime.win-x64.6.0.0.nupkg.sha512",
+    "C:\\Users\\peppe\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\6.0.0\\microsoft.aspnetcore.app.runtime.win-x64.6.0.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'MaterialSkin.Updated 0.2.2' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "MaterialSkin.Updated",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    }
+  ]
+}
