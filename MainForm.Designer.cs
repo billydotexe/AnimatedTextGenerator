@@ -42,7 +42,7 @@
             this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTop.Location = new System.Drawing.Point(0, 0);
             this.panelTop.Name = "panelTop";
-            this.panelTop.Size = new System.Drawing.Size(800, 83);
+            this.panelTop.Size = new System.Drawing.Size(784, 83);
             this.panelTop.TabIndex = 1;
             // 
             // panelLeft
@@ -53,7 +53,7 @@
             this.panelLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelLeft.Location = new System.Drawing.Point(0, 83);
             this.panelLeft.Name = "panelLeft";
-            this.panelLeft.Size = new System.Drawing.Size(160, 367);
+            this.panelLeft.Size = new System.Drawing.Size(160, 478);
             this.panelLeft.TabIndex = 2;
             // 
             // button2
@@ -86,14 +86,14 @@
             this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelMain.Location = new System.Drawing.Point(160, 83);
             this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(640, 367);
+            this.panelMain.Size = new System.Drawing.Size(624, 478);
             this.panelMain.TabIndex = 3;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(784, 561);
             this.Controls.Add(this.panelMain);
             this.Controls.Add(this.panelLeft);
             this.Controls.Add(this.panelTop);

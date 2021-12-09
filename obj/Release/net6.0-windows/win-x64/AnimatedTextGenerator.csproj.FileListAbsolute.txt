@@ -502,7 +502,6 @@ C:\Users\peppe\source\repos\AnimatedTextGenerator\AnimatedTextGenerator\bin\Rele
 C:\Users\peppe\source\repos\AnimatedTextGenerator\AnimatedTextGenerator\bin\Release\net6.0-windows\win-x64\zh-Hant\UIAutomationTypes.resources.dll
 C:\Users\peppe\source\repos\AnimatedTextGenerator\AnimatedTextGenerator\bin\Release\net6.0-windows\win-x64\zh-Hant\WindowsBase.resources.dll
 C:\Users\peppe\source\repos\AnimatedTextGenerator\AnimatedTextGenerator\bin\Release\net6.0-windows\win-x64\zh-Hant\WindowsFormsIntegration.resources.dll
-C:\Users\peppe\source\repos\AnimatedTextGenerator\AnimatedTextGenerator\obj\Release\net6.0-windows\win-x64\AnimatedTextGenerator.Form1.resources
 C:\Users\peppe\source\repos\AnimatedTextGenerator\AnimatedTextGenerator\obj\Release\net6.0-windows\win-x64\AnimatedTextGenerator.csproj.GenerateResource.cache
 C:\Users\peppe\source\repos\AnimatedTextGenerator\AnimatedTextGenerator\obj\Release\net6.0-windows\win-x64\AnimatedTextGenerator.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\peppe\source\repos\AnimatedTextGenerator\AnimatedTextGenerator\obj\Release\net6.0-windows\win-x64\AnimatedTextGenerator.AssemblyInfoInputs.cache
@@ -513,3 +512,6 @@ C:\Users\peppe\source\repos\AnimatedTextGenerator\AnimatedTextGenerator\obj\Rele
 C:\Users\peppe\source\repos\AnimatedTextGenerator\AnimatedTextGenerator\obj\Release\net6.0-windows\win-x64\ref\AnimatedTextGenerator.dll
 C:\Users\peppe\source\repos\AnimatedTextGenerator\AnimatedTextGenerator\obj\Release\net6.0-windows\win-x64\AnimatedTextGenerator.pdb
 C:\Users\peppe\source\repos\AnimatedTextGenerator\AnimatedTextGenerator\obj\Release\net6.0-windows\win-x64\AnimatedTextGenerator.genruntimeconfig.cache
+C:\Users\peppe\source\repos\AnimatedTextGenerator\AnimatedTextGenerator\obj\Release\net6.0-windows\win-x64\AnimatedTextGenerator.FormJump.resources
+C:\Users\peppe\source\repos\AnimatedTextGenerator\AnimatedTextGenerator\obj\Release\net6.0-windows\win-x64\AnimatedTextGenerator.FormSlide.resources
+C:\Users\peppe\source\repos\AnimatedTextGenerator\AnimatedTextGenerator\obj\Release\net6.0-windows\win-x64\AnimatedTextGenerator.MainForm.resources
