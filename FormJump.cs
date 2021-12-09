@@ -4,12 +4,12 @@ using MaterialSkin.Controls;
 
 namespace AnimatedTextGenerator
 {
-    public partial class Form1 : MaterialForm
+    public partial class FormJump : Form
     {
         Utility.HtmlFile html;
         string res;
 
-        public Form1()
+        public FormJump()
         {
             CultureInfo.CurrentCulture = new CultureInfo("en-US");
 
@@ -22,16 +22,16 @@ namespace AnimatedTextGenerator
             btnSecondaryColor.BackColor = Color.Black;
 
             // Create a material theme manager and add the form to manage(this)
-            MaterialSkinManager materialSkinManager = MaterialSkinManager.Instance;
-            materialSkinManager.AddFormToManage(this);
-            materialSkinManager.Theme = MaterialSkinManager.Themes.DARK;
+            //MaterialSkinManager materialSkinManager = MaterialSkinManager.Instance;
+            //materialSkinManager.AddFormToManage(this);
+            //materialSkinManager.Theme = MaterialSkinManager.Themes.DARK;
 
-            // Configure color schema
-            materialSkinManager.ColorScheme = new ColorScheme(
-                Primary.Green400, Primary.Green500,
-                Primary.Green500, Accent.LightGreen200,
-                TextShade.WHITE
-            );
+            //// Configure color schema
+            //materialSkinManager.ColorScheme = new ColorScheme(
+            //    Primary.Green400, Primary.Green500,
+            //    Primary.Green500, Accent.LightGreen200,
+            //    TextShade.WHITE
+            //);
         }
 
         private void InitializeHtml()

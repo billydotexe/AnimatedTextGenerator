@@ -6,7 +6,6 @@ C:\Users\peppe\source\repos\AnimatedTextGenerator\AnimatedTextGenerator\bin\Debu
 C:\Users\peppe\source\repos\AnimatedTextGenerator\AnimatedTextGenerator\bin\Debug\net6.0-windows\AnimatedTextGenerator.pdb
 C:\Users\peppe\source\repos\AnimatedTextGenerator\AnimatedTextGenerator\bin\Debug\net6.0-windows\MaterialSkin.dll
 C:\Users\peppe\source\repos\AnimatedTextGenerator\AnimatedTextGenerator\obj\Debug\net6.0-windows\AnimatedTextGenerator.csproj.AssemblyReference.cache
-C:\Users\peppe\source\repos\AnimatedTextGenerator\AnimatedTextGenerator\obj\Debug\net6.0-windows\AnimatedTextGenerator.Form1.resources
 C:\Users\peppe\source\repos\AnimatedTextGenerator\AnimatedTextGenerator\obj\Debug\net6.0-windows\AnimatedTextGenerator.csproj.GenerateResource.cache
 C:\Users\peppe\source\repos\AnimatedTextGenerator\AnimatedTextGenerator\obj\Debug\net6.0-windows\AnimatedTextGenerator.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\peppe\source\repos\AnimatedTextGenerator\AnimatedTextGenerator\obj\Debug\net6.0-windows\AnimatedTextGenerator.AssemblyInfoInputs.cache
@@ -17,3 +16,6 @@ C:\Users\peppe\source\repos\AnimatedTextGenerator\AnimatedTextGenerator\obj\Debu
 C:\Users\peppe\source\repos\AnimatedTextGenerator\AnimatedTextGenerator\obj\Debug\net6.0-windows\ref\AnimatedTextGenerator.dll
 C:\Users\peppe\source\repos\AnimatedTextGenerator\AnimatedTextGenerator\obj\Debug\net6.0-windows\AnimatedTextGenerator.pdb
 C:\Users\peppe\source\repos\AnimatedTextGenerator\AnimatedTextGenerator\obj\Debug\net6.0-windows\AnimatedTextGenerator.genruntimeconfig.cache
+C:\Users\peppe\source\repos\AnimatedTextGenerator\AnimatedTextGenerator\obj\Debug\net6.0-windows\AnimatedTextGenerator.MainForm.resources
+C:\Users\peppe\source\repos\AnimatedTextGenerator\AnimatedTextGenerator\obj\Debug\net6.0-windows\AnimatedTextGenerator.FormJump.resources
+C:\Users\peppe\source\repos\AnimatedTextGenerator\AnimatedTextGenerator\obj\Debug\net6.0-windows\AnimatedTextGenerator.FormSlide.resources

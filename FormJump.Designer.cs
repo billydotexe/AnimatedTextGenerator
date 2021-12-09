@@ -1,6 +1,6 @@
 ﻿namespace AnimatedTextGenerator
 {
-    partial class Form1
+    partial class FormJump
     {
         /// <summary>
         ///  Required designer variable.
@@ -35,7 +35,6 @@
             this.btnPrimaryColor = new System.Windows.Forms.Button();
             this.btnSecondaryColor = new System.Windows.Forms.Button();
             this.lblSecondaryColor = new MaterialSkin.Controls.MaterialLabel();
-            this.btnGenerate = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btnUpSpeed = new MaterialSkin.Controls.MaterialFlatButton();
             this.txtSpeed = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.btnDownSpeed = new MaterialSkin.Controls.MaterialFlatButton();
@@ -44,6 +43,7 @@
             this.btnDownDelay = new MaterialSkin.Controls.MaterialFlatButton();
             this.txtDelay = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.btnUpDelay = new MaterialSkin.Controls.MaterialFlatButton();
+            this.btnGenerate = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblText
@@ -121,22 +121,6 @@
             this.lblSecondaryColor.Size = new System.Drawing.Size(124, 19);
             this.lblSecondaryColor.TabIndex = 6;
             this.lblSecondaryColor.Text = "Secondary Color:";
-            // 
-            // btnGenerate
-            // 
-            this.btnGenerate.AutoSize = true;
-            this.btnGenerate.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btnGenerate.Depth = 0;
-            this.btnGenerate.Icon = null;
-            this.btnGenerate.Location = new System.Drawing.Point(303, 370);
-            this.btnGenerate.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnGenerate.Name = "btnGenerate";
-            this.btnGenerate.Primary = true;
-            this.btnGenerate.Size = new System.Drawing.Size(89, 36);
-            this.btnGenerate.TabIndex = 8;
-            this.btnGenerate.Text = "GENERATE";
-            this.btnGenerate.UseVisualStyleBackColor = true;
-            this.btnGenerate.Click += new System.EventHandler(this.btnGenerate_Click);
             // 
             // btnUpSpeed
             // 
@@ -272,11 +256,25 @@
             this.btnUpDelay.UseVisualStyleBackColor = true;
             this.btnUpDelay.Click += new System.EventHandler(this.btnUpDown_Click);
             // 
-            // Form1
+            // btnGenerate
+            // 
+            this.btnGenerate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(130)))), ((int)(((byte)(115)))));
+            this.btnGenerate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGenerate.Location = new System.Drawing.Point(348, 381);
+            this.btnGenerate.Name = "btnGenerate";
+            this.btnGenerate.Size = new System.Drawing.Size(109, 42);
+            this.btnGenerate.TabIndex = 17;
+            this.btnGenerate.Text = "GENERATE";
+            this.btnGenerate.UseVisualStyleBackColor = false;
+            this.btnGenerate.Click += new System.EventHandler(this.btnGenerate_Click);
+            // 
+            // FormJump
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnGenerate);
             this.Controls.Add(this.materialLabel2);
             this.Controls.Add(this.btnDownDelay);
             this.Controls.Add(this.txtDelay);
@@ -285,14 +283,13 @@
             this.Controls.Add(this.btnDownSpeed);
             this.Controls.Add(this.txtSpeed);
             this.Controls.Add(this.btnUpSpeed);
-            this.Controls.Add(this.btnGenerate);
             this.Controls.Add(this.btnSecondaryColor);
             this.Controls.Add(this.lblSecondaryColor);
             this.Controls.Add(this.btnPrimaryColor);
             this.Controls.Add(this.lblPrimaryColor);
             this.Controls.Add(this.txtText);
             this.Controls.Add(this.lblText);
-            this.Name = "Form1";
+            this.Name = "FormJump";
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -308,7 +305,6 @@
         private Button btnPrimaryColor;
         private Button btnSecondaryColor;
         private MaterialSkin.Controls.MaterialLabel lblSecondaryColor;
-        private MaterialSkin.Controls.MaterialRaisedButton btnGenerate;
         private MaterialSkin.Controls.MaterialFlatButton btnUpSpeed;
         private MaterialSkin.Controls.MaterialSingleLineTextField txtSpeed;
         private MaterialSkin.Controls.MaterialFlatButton btnDownSpeed;
@@ -317,5 +313,6 @@
         private MaterialSkin.Controls.MaterialFlatButton btnDownDelay;
         private MaterialSkin.Controls.MaterialSingleLineTextField txtDelay;
         private MaterialSkin.Controls.MaterialFlatButton btnUpDelay;
+        private Button btnGenerate;
     }
 }
