@@ -1,7 +1,0 @@
-C:\Users\peppe\source\repos\AnimatedTextGenerator\AnimatedTextGenerator\Build\Windows\AnimatedTextGenerator.pdb
-C:\Users\peppe\source\repos\AnimatedTextGenerator\AnimatedTextGenerator\Build\Windows\D3DCompiler_47_cor3.dll
-C:\Users\peppe\source\repos\AnimatedTextGenerator\AnimatedTextGenerator\Build\Windows\PenImc_cor3.dll
-C:\Users\peppe\source\repos\AnimatedTextGenerator\AnimatedTextGenerator\Build\Windows\PresentationNative_cor3.dll
-C:\Users\peppe\source\repos\AnimatedTextGenerator\AnimatedTextGenerator\Build\Windows\vcruntime140_cor3.dll
-C:\Users\peppe\source\repos\AnimatedTextGenerator\AnimatedTextGenerator\Build\Windows\wpfgfx_cor3.dll
-C:\Users\peppe\source\repos\AnimatedTextGenerator\AnimatedTextGenerator\Build\Windows\AnimatedTextGenerator.exe
