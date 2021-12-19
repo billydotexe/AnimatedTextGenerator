@@ -6,8 +6,9 @@ V0.1
 # Added:
 * a not so basic anymore gui
 
-# Customizable features:
+# Customizable features for the jump animation:
 * text
-* colors
+* colors (with transparency)
 * speed
 * delay
+* font
