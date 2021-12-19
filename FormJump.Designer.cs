@@ -46,6 +46,13 @@ namespace AnimatedTextGenerator
             this.txtText = new AnimatedTextGenerator.CustomControls.MaterialTextBox();
             this.txtSpeed = new AnimatedTextGenerator.CustomControls.MaterialTextBox();
             this.txtDelay = new AnimatedTextGenerator.CustomControls.MaterialTextBox();
+            this.trkTansparencyPrimary = new System.Windows.Forms.TrackBar();
+            this.trkTansparencySecondary = new System.Windows.Forms.TrackBar();
+            this.fontDialog1 = new System.Windows.Forms.FontDialog();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnFont = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.trkTansparencyPrimary)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trkTansparencySecondary)).BeginInit();
             this.SuspendLayout();
             // 
             // btnPrimaryColor
@@ -235,12 +242,58 @@ namespace AnimatedTextGenerator
             this.txtDelay.TabIndex = 31;
             this.txtDelay.Txt = "1";
             // 
+            // trkTansparencyPrimary
+            // 
+            this.trkTansparencyPrimary.Location = new System.Drawing.Point(251, 150);
+            this.trkTansparencyPrimary.Maximum = 255;
+            this.trkTansparencyPrimary.Name = "trkTansparencyPrimary";
+            this.trkTansparencyPrimary.Size = new System.Drawing.Size(104, 45);
+            this.trkTansparencyPrimary.TabIndex = 32;
+            this.trkTansparencyPrimary.TickStyle = System.Windows.Forms.TickStyle.None;
+            this.trkTansparencyPrimary.Value = 255;
+            this.trkTansparencyPrimary.Scroll += new System.EventHandler(this.trkTansparencyPrimary_Scroll);
+            // 
+            // trkTansparencySecondary
+            // 
+            this.trkTansparencySecondary.Location = new System.Drawing.Point(251, 193);
+            this.trkTansparencySecondary.Maximum = 255;
+            this.trkTansparencySecondary.Name = "trkTansparencySecondary";
+            this.trkTansparencySecondary.Size = new System.Drawing.Size(104, 45);
+            this.trkTansparencySecondary.TabIndex = 33;
+            this.trkTansparencySecondary.TickStyle = System.Windows.Forms.TickStyle.None;
+            this.trkTansparencySecondary.Value = 255;
+            this.trkTansparencySecondary.Scroll += new System.EventHandler(this.trkTansparencySecondary_Scroll);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label1.Location = new System.Drawing.Point(34, 343);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(42, 18);
+            this.label1.TabIndex = 35;
+            this.label1.Text = "Font:";
+            // 
+            // btnFont
+            // 
+            this.btnFont.Location = new System.Drawing.Point(154, 343);
+            this.btnFont.Name = "btnFont";
+            this.btnFont.Size = new System.Drawing.Size(91, 23);
+            this.btnFont.TabIndex = 36;
+            this.btnFont.UseVisualStyleBackColor = true;
+            this.btnFont.Click += new System.EventHandler(this.btnFont_Click);
+            // 
             // FormJump
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnFont);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.trkTansparencySecondary);
+            this.Controls.Add(this.trkTansparencyPrimary);
             this.Controls.Add(this.txtDelay);
             this.Controls.Add(this.txtSpeed);
             this.Controls.Add(this.txtText);
@@ -258,6 +311,8 @@ namespace AnimatedTextGenerator
             this.Controls.Add(this.btnPrimaryColor);
             this.Name = "FormJump";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.trkTansparencyPrimary)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trkTansparencySecondary)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -280,5 +335,10 @@ namespace AnimatedTextGenerator
         private CustomControls.MaterialTextBox txtText;
         private AnimatedTextGenerator.CustomControls.MaterialTextBox txtSpeed;
         private CustomControls.MaterialTextBox txtDelay;
+        private TrackBar trkTansparencyPrimary;
+        private TrackBar trkTansparencySecondary;
+        private FontDialog fontDialog1;
+        private Label label1;
+        private Button btnFont;
     }
 }

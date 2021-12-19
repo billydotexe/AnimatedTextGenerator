@@ -39,7 +39,9 @@ namespace AnimatedTextGenerator
             html.Css.SecondaryColor = btnSecondaryColor.BackColor;
             html.Css.Speed = Int32.Parse(txtSpeed.Txt);
             html.Css.Delay = Int32.Parse(txtDelay.Txt);
+            html.Css.Font = btnFont.Text;
             html.Text = txtText.Txt;
+            
         }
 
         private void Save()
@@ -89,6 +91,27 @@ namespace AnimatedTextGenerator
                 if (btn.Text == "+") text.Txt = (Int32.Parse(text.Txt) + 1).ToString();
                 else if(btn.Text == "-" && Int32.Parse(text.Txt) > 1) text.Txt = (Int32.Parse(text.Txt) - 1).ToString();
             }
+        }
+
+        private void trkTansparencyPrimary_Scroll(object sender, EventArgs e)
+        {
+            var color = btnPrimaryColor.BackColor;
+            var newColor = Color.FromArgb(trkTansparencyPrimary.Value, color.R, color.G, color.B);
+            btnPrimaryColor.BackColor = newColor;
+        }
+
+        private void trkTansparencySecondary_Scroll(object sender, EventArgs e)
+        {
+            var color = btnSecondaryColor.BackColor;
+            var newColor = Color.FromArgb(trkTansparencySecondary.Value, color.R, color.G, color.B);
+            btnSecondaryColor.BackColor = newColor;
+        }
+
+        private void btnFont_Click(object sender, EventArgs e)
+        {
+            fontDialog1.ShowDialog();
+            btnFont.Font = fontDialog1.Font;
+            btnFont.Text = fontDialog1.Font.Name;
         }
     }
 }

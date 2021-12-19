@@ -17,7 +17,7 @@ namespace AnimatedTextGenerator.Utility
         public int Delay { get; set; }
         public int Repeats { get; set; }
 
-        private string _base = "span {{position: relative;padding: 0;}}p {{font-size: 80px;color: {0};-webkit-text-stroke: 2px {1};}}{2}@keyframes jump {{0% {{top: 0px;}}50% {{top: 30px;}}100% {{top: 0px;}}}}";
+        private string _base = "{3}span {{position: relative;padding: 0;}}p {{font-size: 80px;color: {0};-webkit-text-stroke: 2px {1};}}{2}@keyframes jump {{0% {{top: 0px;}}50% {{top: 30px;}}100% {{top: 0px;}}}}";
         private string _cssDelay = "span:nth-child({0}n) {{animation: jump {1}s infinite;-webkit-animation: jump {1}s infinite;animation-delay: {2}s;}}";
 
         private string GetColor(Color color)
@@ -27,7 +27,7 @@ namespace AnimatedTextGenerator.Utility
             g = color.G;
             b = color.B;
             a = color.A;
-            return string.Format("rgba({0}, {1}, {2}, {3})", r, g, b, a);
+            return string.Format("rgba({0}, {1}, {2}, {3})", r, g, b, ((float)a)/255);
         }
 
         private string GetDelay()
@@ -41,9 +41,19 @@ namespace AnimatedTextGenerator.Utility
             return delay;
         }
 
-        public string Generate()
+        private string GetFont()
         {
-            return String.Format(_base, GetColor(PrimaryColor), GetColor(SecondaryColor), GetDelay());
+            string font = String.Empty;
+            if (!String.IsNullOrEmpty(Font))
+            {
+                font = $"p {{font-family: '{Font}';}} ";
+            }
+            return font;
+        }
+
+    public string Generate()
+        {
+            return String.Format(_base, GetColor(PrimaryColor), GetColor(SecondaryColor), GetDelay(), GetFont());
         }
     }
 }
