@@ -1,21 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "e3BWeYfpLCoXG+P2XuCH1MHJpCdnDnQm8i2f45sMZI/iI+UNgasmPyDWYk1OHzhN6qhSF/mxfCDjmOWMRZZ0BA==",
+  "dgSpecHash": "Iz/KwGOlapFvVdOuXItKXAUzV/Ub8fOJvrdz3bRl3JiVJCSak6/nn0MVpZHf2rEViBgbXN5FmKD7ZjD1fFiz8A==",
   "success": true,
   "projectFilePath": "C:\\Users\\peppe\\source\\repos\\AnimatedTextGenerator\\AnimatedTextGenerator\\AnimatedTextGenerator.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\peppe\\.nuget\\packages\\materialskin.updated\\0.2.2\\materialskin.updated.0.2.2.nupkg.sha512"
-  ],
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'MaterialSkin.Updated 0.2.2' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
-      "libraryId": "MaterialSkin.Updated",
-      "targetGraphs": [
-        "net6.0-windows7.0"
-      ]
-    }
-  ]
+  "expectedPackageFiles": [],
+  "logs": []
 }

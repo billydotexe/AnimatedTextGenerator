@@ -13,7 +13,7 @@ namespace AnimatedTextGenerator
     public partial class MainForm : Form
     {
 
-        Form activeForm;
+        Form? activeForm;
         public MainForm()
         {
             InitializeComponent();

@@ -6,10 +6,9 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
+    <SignAssembly>True</SignAssembly>
+    <AssemblyOriginatorKeyFile>C:\Users\peppe\source\repos\AnimatedTextGenerator\public.snk</AssemblyOriginatorKeyFile>
+    <DelaySign>True</DelaySign>
   </PropertyGroup>
-
-  <ItemGroup>
-    <PackageReference Include="MaterialSkin.Updated" Version="0.2.2" />
-  </ItemGroup>
 
 </Project>

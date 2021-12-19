@@ -4,14 +4,12 @@ C:\Users\peppe\source\repos\AnimatedTextGenerator\AnimatedTextGenerator\bin\Rele
 C:\Users\peppe\source\repos\AnimatedTextGenerator\AnimatedTextGenerator\bin\Release\net6.0-windows\AnimatedTextGenerator.dll
 C:\Users\peppe\source\repos\AnimatedTextGenerator\AnimatedTextGenerator\bin\Release\net6.0-windows\ref\AnimatedTextGenerator.dll
 C:\Users\peppe\source\repos\AnimatedTextGenerator\AnimatedTextGenerator\bin\Release\net6.0-windows\AnimatedTextGenerator.pdb
-C:\Users\peppe\source\repos\AnimatedTextGenerator\AnimatedTextGenerator\bin\Release\net6.0-windows\MaterialSkin.dll
 C:\Users\peppe\source\repos\AnimatedTextGenerator\AnimatedTextGenerator\obj\Release\net6.0-windows\AnimatedTextGenerator.csproj.AssemblyReference.cache
 C:\Users\peppe\source\repos\AnimatedTextGenerator\AnimatedTextGenerator\obj\Release\net6.0-windows\AnimatedTextGenerator.csproj.GenerateResource.cache
 C:\Users\peppe\source\repos\AnimatedTextGenerator\AnimatedTextGenerator\obj\Release\net6.0-windows\AnimatedTextGenerator.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\peppe\source\repos\AnimatedTextGenerator\AnimatedTextGenerator\obj\Release\net6.0-windows\AnimatedTextGenerator.AssemblyInfoInputs.cache
 C:\Users\peppe\source\repos\AnimatedTextGenerator\AnimatedTextGenerator\obj\Release\net6.0-windows\AnimatedTextGenerator.AssemblyInfo.cs
 C:\Users\peppe\source\repos\AnimatedTextGenerator\AnimatedTextGenerator\obj\Release\net6.0-windows\AnimatedTextGenerator.csproj.CoreCompileInputs.cache
-C:\Users\peppe\source\repos\AnimatedTextGenerator\AnimatedTextGenerator\obj\Release\net6.0-windows\AnimatedTextGenerator.csproj.CopyComplete
 C:\Users\peppe\source\repos\AnimatedTextGenerator\AnimatedTextGenerator\obj\Release\net6.0-windows\AnimatedTextGenerator.dll
 C:\Users\peppe\source\repos\AnimatedTextGenerator\AnimatedTextGenerator\obj\Release\net6.0-windows\ref\AnimatedTextGenerator.dll
 C:\Users\peppe\source\repos\AnimatedTextGenerator\AnimatedTextGenerator\obj\Release\net6.0-windows\AnimatedTextGenerator.pdb
@@ -19,3 +17,4 @@ C:\Users\peppe\source\repos\AnimatedTextGenerator\AnimatedTextGenerator\obj\Rele
 C:\Users\peppe\source\repos\AnimatedTextGenerator\AnimatedTextGenerator\obj\Release\net6.0-windows\AnimatedTextGenerator.FormJump.resources
 C:\Users\peppe\source\repos\AnimatedTextGenerator\AnimatedTextGenerator\obj\Release\net6.0-windows\AnimatedTextGenerator.FormSlide.resources
 C:\Users\peppe\source\repos\AnimatedTextGenerator\AnimatedTextGenerator\obj\Release\net6.0-windows\AnimatedTextGenerator.MainForm.resources
+C:\Users\peppe\source\repos\AnimatedTextGenerator\AnimatedTextGenerator\obj\Release\net6.0-windows\AnimatedTextGenerator.CustomControls.MaterialTextBox.resources

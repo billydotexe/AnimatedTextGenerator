@@ -1,6 +1,5 @@
-using MaterialSkin;
 using System.Globalization;
-using MaterialSkin.Controls;
+using AnimatedTextGenerator.Resources;
 
 namespace AnimatedTextGenerator
 {
@@ -38,9 +37,9 @@ namespace AnimatedTextGenerator
         {
             html.Css.PrimaryColor = btnPrimaryColor.BackColor;
             html.Css.SecondaryColor = btnSecondaryColor.BackColor;
-            html.Css.Speed = Int32.Parse(txtSpeed.Text);
-            html.Css.Delay = Int32.Parse(txtDelay.Text);
-            html.Text = txtText.Text;
+            html.Css.Speed = Int32.Parse(txtSpeed.Txt);
+            html.Css.Delay = Int32.Parse(txtDelay.Txt);
+            html.Text = txtText.Txt;
         }
 
         private void Save()
@@ -59,7 +58,7 @@ namespace AnimatedTextGenerator
         {
             if(!(sender is null) && sender is Button)
             {
-                Button btn = sender as Button;
+                Button btn = (Button)sender;
                 if(colorDialog1.ShowDialog() == DialogResult.OK)
                 {
                     btn.BackColor = colorDialog1.Color;
@@ -82,13 +81,13 @@ namespace AnimatedTextGenerator
             if(!(sender is null) && sender is Button)
             {
                 //var textbox = this.Controls[];
-                Button btn = sender as Button;
+                Button btn = (Button)sender;
                 string textName = $"txt{btn.Name.Replace("Up", "").Replace("Down", "").Replace("btn", "")}";
 
-                MaterialSkin.Controls.MaterialSingleLineTextField text = (MaterialSkin.Controls.MaterialSingleLineTextField) this.Controls.Find(textName, true)[0];
+                CustomControls.MaterialTextBox text = (CustomControls.MaterialTextBox) this.Controls.Find(textName, true)[0];
 
-                if (btn.Text == "+") text.Text = (Int32.Parse(text.Text) + 1).ToString();
-                else if(btn.Text == "-" && Int32.Parse(text.Text) > 1) text.Text = (Int32.Parse(text.Text) - 1).ToString();
+                if (btn.Text == "+") text.Txt = (Int32.Parse(text.Txt) + 1).ToString();
+                else if(btn.Text == "-" && Int32.Parse(text.Txt) > 1) text.Txt = (Int32.Parse(text.Txt) - 1).ToString();
             }
         }
     }

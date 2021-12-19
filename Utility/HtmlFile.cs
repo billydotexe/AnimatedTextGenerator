@@ -16,11 +16,13 @@ namespace AnimatedTextGenerator.Utility
         public HtmlFile()
         {
             Css = new CssFile();
+            Text = String.Empty;
         }
         
         public HtmlFile(CssFile Css)
         {
             this.Css = Css;
+            Text = String.Empty;
         }
 
         public string Generate()

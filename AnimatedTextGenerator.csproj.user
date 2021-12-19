@@ -4,6 +4,9 @@
     <_LastSelectedProfileId>C:\Users\peppe\source\repos\AnimatedTextGenerator\AnimatedTextGenerator\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Update="CustomControls\MaterialTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="FormJump.cs">
       <SubType>Form</SubType>
     </Compile>
