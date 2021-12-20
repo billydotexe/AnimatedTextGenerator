@@ -21,7 +21,7 @@ V0.1
 ![main page of the program](/ReadmeImages/streamlabs0.png)
 * WebSource
 ![main page of the program](/ReadmeImages/streamlabs1.png)
-* Select Local file
+* Select Local file\
 ![main page of the program](/ReadmeImages/streamlabs2.png)
 * Select your file and adjust width and height
 ![main page of the program](/ReadmeImages/streamlabs3.png)
