@@ -55,7 +55,7 @@ namespace AnimatedTextGenerator
             this.panelLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelLeft.Location = new System.Drawing.Point(0, 83);
             this.panelLeft.Name = "panelLeft";
-            this.panelLeft.Size = new System.Drawing.Size(160, 478);
+            this.panelLeft.Size = new System.Drawing.Size(160, 378);
             this.panelLeft.TabIndex = 2;
             // 
             // button2
@@ -63,7 +63,7 @@ namespace AnimatedTextGenerator
             this.button2.Dock = System.Windows.Forms.DockStyle.Top;
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = ColorTheme.OnBackground;
+            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.button2.Location = new System.Drawing.Point(0, 50);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(160, 50);
@@ -77,7 +77,7 @@ namespace AnimatedTextGenerator
             this.button1.Dock = System.Windows.Forms.DockStyle.Top;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = ColorTheme.OnBackground;
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.button1.Location = new System.Drawing.Point(0, 0);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(160, 50);
@@ -92,18 +92,18 @@ namespace AnimatedTextGenerator
             this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelMain.Location = new System.Drawing.Point(160, 83);
             this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(624, 478);
+            this.panelMain.Size = new System.Drawing.Size(624, 378);
             this.panelMain.TabIndex = 3;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(784, 561);
+            this.ClientSize = new System.Drawing.Size(784, 461);
             this.Controls.Add(this.panelMain);
             this.Controls.Add(this.panelLeft);
             this.Controls.Add(this.panelTop);
-            this.Name = "AnimatedTextGenerator";
+            this.Name = "MainForm";
             this.Text = "AnimatedTextGenerator";
             this.panelLeft.ResumeLayout(false);
             this.ResumeLayout(false);

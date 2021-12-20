@@ -51,33 +51,39 @@ namespace AnimatedTextGenerator
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
             this.label1 = new System.Windows.Forms.Label();
             this.btnFont = new System.Windows.Forms.Button();
+            this.txtBorder = new AnimatedTextGenerator.CustomControls.MaterialTextBox();
+            this.btnDownBorder = new System.Windows.Forms.Button();
+            this.btnUpBorder = new System.Windows.Forms.Button();
+            this.lblBorder = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.trkTansparencyPrimary)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trkTansparencySecondary)).BeginInit();
             this.SuspendLayout();
             // 
             // btnPrimaryColor
             // 
-            this.btnPrimaryColor.Location = new System.Drawing.Point(170, 149);
+            this.btnPrimaryColor.BackColor = System.Drawing.Color.Black;
+            this.btnPrimaryColor.Location = new System.Drawing.Point(164, 79);
             this.btnPrimaryColor.Name = "btnPrimaryColor";
             this.btnPrimaryColor.Size = new System.Drawing.Size(75, 23);
             this.btnPrimaryColor.TabIndex = 5;
-            this.btnPrimaryColor.UseVisualStyleBackColor = true;
+            this.btnPrimaryColor.UseVisualStyleBackColor = false;
             this.btnPrimaryColor.Click += new System.EventHandler(this.btnColor_Click);
             // 
             // btnSecondaryColor
             // 
-            this.btnSecondaryColor.Location = new System.Drawing.Point(170, 193);
+            this.btnSecondaryColor.BackColor = System.Drawing.Color.Black;
+            this.btnSecondaryColor.Location = new System.Drawing.Point(164, 123);
             this.btnSecondaryColor.Name = "btnSecondaryColor";
             this.btnSecondaryColor.Size = new System.Drawing.Size(75, 23);
             this.btnSecondaryColor.TabIndex = 7;
-            this.btnSecondaryColor.UseVisualStyleBackColor = true;
+            this.btnSecondaryColor.UseVisualStyleBackColor = false;
             this.btnSecondaryColor.Click += new System.EventHandler(this.btnColor_Click);
             // 
             // btnGenerate
             // 
             this.btnGenerate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(130)))), ((int)(((byte)(115)))));
             this.btnGenerate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGenerate.Location = new System.Drawing.Point(348, 381);
+            this.btnGenerate.Location = new System.Drawing.Point(336, 323);
             this.btnGenerate.Name = "btnGenerate";
             this.btnGenerate.Size = new System.Drawing.Size(109, 42);
             this.btnGenerate.TabIndex = 17;
@@ -90,7 +96,7 @@ namespace AnimatedTextGenerator
             this.lblText.AutoSize = true;
             this.lblText.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.lblText.Location = new System.Drawing.Point(29, 100);
+            this.lblText.Location = new System.Drawing.Point(23, 30);
             this.lblText.Name = "lblText";
             this.lblText.Size = new System.Drawing.Size(40, 18);
             this.lblText.TabIndex = 18;
@@ -101,7 +107,7 @@ namespace AnimatedTextGenerator
             this.lblPrimaryColor.AutoSize = true;
             this.lblPrimaryColor.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblPrimaryColor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.lblPrimaryColor.Location = new System.Drawing.Point(29, 150);
+            this.lblPrimaryColor.Location = new System.Drawing.Point(23, 80);
             this.lblPrimaryColor.Name = "lblPrimaryColor";
             this.lblPrimaryColor.Size = new System.Drawing.Size(104, 18);
             this.lblPrimaryColor.TabIndex = 19;
@@ -112,7 +118,7 @@ namespace AnimatedTextGenerator
             this.lblSecondaryColor.AutoSize = true;
             this.lblSecondaryColor.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblSecondaryColor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.lblSecondaryColor.Location = new System.Drawing.Point(29, 194);
+            this.lblSecondaryColor.Location = new System.Drawing.Point(23, 124);
             this.lblSecondaryColor.Name = "lblSecondaryColor";
             this.lblSecondaryColor.Size = new System.Drawing.Size(124, 18);
             this.lblSecondaryColor.TabIndex = 20;
@@ -123,7 +129,7 @@ namespace AnimatedTextGenerator
             this.lblSpeed.AutoSize = true;
             this.lblSpeed.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblSpeed.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.lblSpeed.Location = new System.Drawing.Point(34, 244);
+            this.lblSpeed.Location = new System.Drawing.Point(23, 218);
             this.lblSpeed.Name = "lblSpeed";
             this.lblSpeed.Size = new System.Drawing.Size(54, 18);
             this.lblSpeed.TabIndex = 21;
@@ -134,7 +140,7 @@ namespace AnimatedTextGenerator
             this.lblDelay.AutoSize = true;
             this.lblDelay.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblDelay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.lblDelay.Location = new System.Drawing.Point(34, 298);
+            this.lblDelay.Location = new System.Drawing.Point(23, 272);
             this.lblDelay.Name = "lblDelay";
             this.lblDelay.Size = new System.Drawing.Size(49, 18);
             this.lblDelay.TabIndex = 22;
@@ -147,7 +153,7 @@ namespace AnimatedTextGenerator
             this.btnUpSpeed.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpSpeed.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnUpSpeed.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnUpSpeed.Location = new System.Drawing.Point(236, 235);
+            this.btnUpSpeed.Location = new System.Drawing.Point(225, 209);
             this.btnUpSpeed.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnUpSpeed.Name = "btnUpSpeed";
             this.btnUpSpeed.Size = new System.Drawing.Size(36, 36);
@@ -163,7 +169,7 @@ namespace AnimatedTextGenerator
             this.btnUpDelay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpDelay.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnUpDelay.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnUpDelay.Location = new System.Drawing.Point(236, 290);
+            this.btnUpDelay.Location = new System.Drawing.Point(225, 264);
             this.btnUpDelay.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnUpDelay.Name = "btnUpDelay";
             this.btnUpDelay.Size = new System.Drawing.Size(36, 36);
@@ -179,7 +185,7 @@ namespace AnimatedTextGenerator
             this.btnDownSpeed.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDownSpeed.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnDownSpeed.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnDownSpeed.Location = new System.Drawing.Point(159, 235);
+            this.btnDownSpeed.Location = new System.Drawing.Point(148, 209);
             this.btnDownSpeed.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnDownSpeed.Name = "btnDownSpeed";
             this.btnDownSpeed.Size = new System.Drawing.Size(36, 36);
@@ -195,7 +201,7 @@ namespace AnimatedTextGenerator
             this.btnDownDelay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDownDelay.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnDownDelay.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnDownDelay.Location = new System.Drawing.Point(159, 290);
+            this.btnDownDelay.Location = new System.Drawing.Point(148, 264);
             this.btnDownDelay.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnDownDelay.Name = "btnDownDelay";
             this.btnDownDelay.Size = new System.Drawing.Size(36, 36);
@@ -208,7 +214,7 @@ namespace AnimatedTextGenerator
             // 
             this.txtText.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.txtText.BorderSize = 1;
-            this.txtText.Location = new System.Drawing.Point(159, 100);
+            this.txtText.Location = new System.Drawing.Point(153, 30);
             this.txtText.Margin = new System.Windows.Forms.Padding(0);
             this.txtText.Name = "txtText";
             this.txtText.Padding = new System.Windows.Forms.Padding(0, 0, 0, 3);
@@ -221,7 +227,7 @@ namespace AnimatedTextGenerator
             this.txtSpeed.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.txtSpeed.BorderSize = 1;
             this.txtSpeed.Enabled = false;
-            this.txtSpeed.Location = new System.Drawing.Point(202, 248);
+            this.txtSpeed.Location = new System.Drawing.Point(191, 222);
             this.txtSpeed.Margin = new System.Windows.Forms.Padding(0);
             this.txtSpeed.Name = "txtSpeed";
             this.txtSpeed.Padding = new System.Windows.Forms.Padding(0, 0, 0, 3);
@@ -234,7 +240,7 @@ namespace AnimatedTextGenerator
             this.txtDelay.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.txtDelay.BorderSize = 1;
             this.txtDelay.Enabled = false;
-            this.txtDelay.Location = new System.Drawing.Point(202, 298);
+            this.txtDelay.Location = new System.Drawing.Point(191, 272);
             this.txtDelay.Margin = new System.Windows.Forms.Padding(0);
             this.txtDelay.Name = "txtDelay";
             this.txtDelay.Padding = new System.Windows.Forms.Padding(0, 0, 0, 3);
@@ -244,7 +250,7 @@ namespace AnimatedTextGenerator
             // 
             // trkTansparencyPrimary
             // 
-            this.trkTansparencyPrimary.Location = new System.Drawing.Point(251, 150);
+            this.trkTansparencyPrimary.Location = new System.Drawing.Point(272, 79);
             this.trkTansparencyPrimary.Maximum = 255;
             this.trkTansparencyPrimary.Name = "trkTansparencyPrimary";
             this.trkTansparencyPrimary.Size = new System.Drawing.Size(104, 45);
@@ -255,7 +261,7 @@ namespace AnimatedTextGenerator
             // 
             // trkTansparencySecondary
             // 
-            this.trkTansparencySecondary.Location = new System.Drawing.Point(251, 193);
+            this.trkTansparencySecondary.Location = new System.Drawing.Point(272, 123);
             this.trkTansparencySecondary.Maximum = 255;
             this.trkTansparencySecondary.Name = "trkTansparencySecondary";
             this.trkTansparencySecondary.Size = new System.Drawing.Size(104, 45);
@@ -269,7 +275,7 @@ namespace AnimatedTextGenerator
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(34, 343);
+            this.label1.Location = new System.Drawing.Point(23, 317);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(42, 18);
             this.label1.TabIndex = 35;
@@ -277,12 +283,68 @@ namespace AnimatedTextGenerator
             // 
             // btnFont
             // 
-            this.btnFont.Location = new System.Drawing.Point(154, 343);
+            this.btnFont.Location = new System.Drawing.Point(159, 317);
             this.btnFont.Name = "btnFont";
             this.btnFont.Size = new System.Drawing.Size(91, 23);
             this.btnFont.TabIndex = 36;
             this.btnFont.UseVisualStyleBackColor = true;
             this.btnFont.Click += new System.EventHandler(this.btnFont_Click);
+            // 
+            // txtBorder
+            // 
+            this.txtBorder.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.txtBorder.BorderSize = 1;
+            this.txtBorder.Enabled = false;
+            this.txtBorder.Location = new System.Drawing.Point(191, 173);
+            this.txtBorder.Margin = new System.Windows.Forms.Padding(0);
+            this.txtBorder.Name = "txtBorder";
+            this.txtBorder.Padding = new System.Windows.Forms.Padding(0, 0, 0, 3);
+            this.txtBorder.Size = new System.Drawing.Size(27, 23);
+            this.txtBorder.TabIndex = 40;
+            this.txtBorder.Txt = "1";
+            // 
+            // btnDownBorder
+            // 
+            this.btnDownBorder.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDownBorder.FlatAppearance.BorderSize = 0;
+            this.btnDownBorder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDownBorder.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnDownBorder.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnDownBorder.Location = new System.Drawing.Point(148, 160);
+            this.btnDownBorder.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnDownBorder.Name = "btnDownBorder";
+            this.btnDownBorder.Size = new System.Drawing.Size(36, 36);
+            this.btnDownBorder.TabIndex = 39;
+            this.btnDownBorder.Text = "-";
+            this.btnDownBorder.UseVisualStyleBackColor = true;
+            this.btnDownBorder.Click += new System.EventHandler(this.btnUpDown_Click);
+            // 
+            // btnUpBorder
+            // 
+            this.btnUpBorder.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnUpBorder.FlatAppearance.BorderSize = 0;
+            this.btnUpBorder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpBorder.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnUpBorder.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnUpBorder.Location = new System.Drawing.Point(225, 160);
+            this.btnUpBorder.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnUpBorder.Name = "btnUpBorder";
+            this.btnUpBorder.Size = new System.Drawing.Size(36, 36);
+            this.btnUpBorder.TabIndex = 37;
+            this.btnUpBorder.Text = "+";
+            this.btnUpBorder.UseVisualStyleBackColor = true;
+            this.btnUpBorder.Click += new System.EventHandler(this.btnUpDown_Click);
+            // 
+            // lblBorder
+            // 
+            this.lblBorder.AutoSize = true;
+            this.lblBorder.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblBorder.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.lblBorder.Location = new System.Drawing.Point(23, 169);
+            this.lblBorder.Name = "lblBorder";
+            this.lblBorder.Size = new System.Drawing.Size(65, 18);
+            this.lblBorder.TabIndex = 38;
+            this.lblBorder.Text = "Borders:";
             // 
             // FormJump
             // 
@@ -290,6 +352,10 @@ namespace AnimatedTextGenerator
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtBorder);
+            this.Controls.Add(this.btnDownBorder);
+            this.Controls.Add(this.btnUpBorder);
+            this.Controls.Add(this.lblBorder);
             this.Controls.Add(this.btnFont);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.trkTansparencySecondary);
@@ -340,5 +406,9 @@ namespace AnimatedTextGenerator
         private FontDialog fontDialog1;
         private Label label1;
         private Button btnFont;
+        private CustomControls.MaterialTextBox txtBorder;
+        private Button btnDownBorder;
+        private Button btnUpBorder;
+        private Label lblBorder;
     }
 }

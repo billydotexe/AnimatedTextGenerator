@@ -5,32 +5,17 @@ namespace AnimatedTextGenerator
 {
     public partial class FormJump : Form
     {
-        Utility.HtmlFile html;
+        Utility.HtmlFileJump html;
         string res;
 
         public FormJump()
         {
             CultureInfo.CurrentCulture = new CultureInfo("en-US");
 
-            html = new Utility.HtmlFile();
+            html = new Utility.HtmlFileJump();
             res = String.Empty;
 
             InitializeComponent();
-
-            btnPrimaryColor.BackColor = Color.Black;
-            btnSecondaryColor.BackColor = Color.Black;
-
-            // Create a material theme manager and add the form to manage(this)
-            //MaterialSkinManager materialSkinManager = MaterialSkinManager.Instance;
-            //materialSkinManager.AddFormToManage(this);
-            //materialSkinManager.Theme = MaterialSkinManager.Themes.DARK;
-
-            //// Configure color schema
-            //materialSkinManager.ColorScheme = new ColorScheme(
-            //    Primary.Green400, Primary.Green500,
-            //    Primary.Green500, Accent.LightGreen200,
-            //    TextShade.WHITE
-            //);
         }
 
         private void InitializeHtml()
@@ -40,8 +25,8 @@ namespace AnimatedTextGenerator
             html.Css.Speed = Int32.Parse(txtSpeed.Txt);
             html.Css.Delay = Int32.Parse(txtDelay.Txt);
             html.Css.Font = btnFont.Text;
+            html.Css.BorderSize = Int32.Parse(txtBorder.Txt);
             html.Text = txtText.Txt;
-            
         }
 
         private void Save()

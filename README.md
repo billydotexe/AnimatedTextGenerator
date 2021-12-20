@@ -12,3 +12,11 @@ V0.1
 * speed
 * delay
 * font
+* +Border size
+
+# Customizable features for the slide animation:
+* +text
+* +colors (with transparency)
+* +speed
+* +font
+* +Border size

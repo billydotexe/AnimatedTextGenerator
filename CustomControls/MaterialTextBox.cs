@@ -104,47 +104,56 @@ namespace AnimatedTextGenerator.CustomControls
 
         void FadeIn(object? sender, EventArgs e)
         {
-            StepCounterIn++;
-            float mid = this.Width / 2;
-            float stepw = (mid / Duration) * StepDuration;
-
-            float x = stepw * StepCounterIn;
-
-            using (Pen pen = new(_ActiveBorderColor, _BorderSize))
+            try
             {
-                this.CreateGraphics().DrawLine(pen, mid, this.Height - 1, mid + x, this.Height - 1);
+                StepCounterIn++;
+                float mid = this.Width / 2;
+                float stepw = (mid / Duration) * StepDuration;
 
-                this.CreateGraphics().DrawLine(pen, mid, this.Height - 1, mid - x, this.Height - 1);
-            }
+                float x = stepw * StepCounterIn;
 
-            if (StepCounterIn * StepDuration > Duration)
-            {
-                StepCounterIn = 0;
-                t.Tick -= FadeIn;
-                t.Stop();
+                using (Pen pen = new(_ActiveBorderColor, _BorderSize))
+                {
+                    this.CreateGraphics().DrawLine(pen, mid, this.Height - 1, mid + x, this.Height - 1);
+
+                    this.CreateGraphics().DrawLine(pen, mid, this.Height - 1, mid - x, this.Height - 1);
+                }
+
+                if (StepCounterIn * StepDuration > Duration)
+                {
+                    StepCounterIn = 0;
+                    t.Tick -= FadeIn;
+                    t.Stop();
+                }
             }
+            catch (System.ObjectDisposedException) { }
         }
         void FadeOut(object? sender, EventArgs e) 
         {
-            StepCounterIn++;
-            float mid = this.Width / 2;
-            float stepw = (mid / Duration) * StepDuration;
+            try
+                {
+                StepCounterIn++;
+                float mid = this.Width / 2;
+                float stepw = (mid / Duration) * StepDuration;
 
-            float x = stepw * StepCounterIn;
+                float x = stepw * StepCounterIn;
 
-            using (Pen pen = new(_BorderColor, _BorderSize))
-            {
-                this.CreateGraphics().DrawLine(pen, 0, this.Height - 1, 0 + x, this.Height - 1);
+                using (Pen pen = new(_BorderColor, _BorderSize))
+                {
+                    this.CreateGraphics().DrawLine(pen, 0, this.Height - 1, 0 + x, this.Height - 1);
 
-                this.CreateGraphics().DrawLine(pen, this.Width, this.Height - 1, this.Width - x, this.Height - 1);
+                    this.CreateGraphics().DrawLine(pen, this.Width, this.Height - 1, this.Width - x, this.Height - 1);
+                }
+
+                if (StepCounterOut * StepDuration > Duration)
+                {
+                    StepCounterOut = 0;
+                    t.Tick -= FadeOut;
+                    t.Stop();
+                }
+
             }
-
-            if (StepCounterOut * StepDuration > Duration)
-            {
-                StepCounterOut = 0;
-                t.Tick -= FadeOut;
-                t.Stop();
-            }
+            catch(System.ObjectDisposedException) { }
         }
 
         public Color BorderColor { get => _BorderColor; set{ _BorderColor = value; this.Invalidate(); }  }

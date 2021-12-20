@@ -6,7 +6,7 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
-    <SignAssembly>True</SignAssembly>
+    <SignAssembly>False</SignAssembly>
     <AssemblyOriginatorKeyFile>C:\Users\peppe\source\repos\AnimatedTextGenerator\public.snk</AssemblyOriginatorKeyFile>
     <DelaySign>True</DelaySign>
   </PropertyGroup>
