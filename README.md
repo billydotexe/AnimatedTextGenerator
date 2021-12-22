@@ -4,29 +4,29 @@ you can download a builded version [here](http://billyexe.wtf/AnimatedTextGenera
 
 V0.1
 
-#How to use:
+# How to use:
 * First of all open the program (bruh)
 * Then choose the animation you want to make (in this example I'll just go with the jump animation)\
-![main page of the program](/ReadmeImages/main.png)
+![Main page of the program](/ReadmeImages/main.png)
 * Add your text and set everything as you want\
-![main page of the program](/ReadmeImages/jump0.png)
+![Jump form](/ReadmeImages/jump0.png)
 * Click generate\
-![main page of the program](/ReadmeImages/jump1.png)
+![Generate](/ReadmeImages/jump1.png)
 * Save the file with the name you prefer\
-![main page of the program](/ReadmeImages/jump2.png)
+![Save](/ReadmeImages/Jump2.png)
 * Optional: check your file (open it with a broser)\
-![main page of the program](/ReadmeImages/jump3.gif)
+![Check](/ReadmeImages/jump3.gif)
 * Open your streaming program (I'm using streamlabs)\
 * Add a new source
-![main page of the program](/ReadmeImages/streamlabs0.png)
+![Add source](/ReadmeImages/streamlabs0.png)
 * WebSource\
-![main page of the program](/ReadmeImages/streamlabs1.png)
+![Web source](/ReadmeImages/streamlabs1.png)
 * Select Local file\
-![main page of the program](/ReadmeImages/streamlabs2.png)
+![Local file](/ReadmeImages/streamlabs2.png)
 * Select your file and adjust width and height\
-![main page of the program](/ReadmeImages/streamlabs3.png)
+![Select file](/ReadmeImages/streamlabs3.png)
 * Place it wherever you want \
-![main page of the program](/ReadmeImages/streamlabs4.png)
+![Adjust position](/ReadmeImages/streamlabs4.png)
 * You're done!
   
 
