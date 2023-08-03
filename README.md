@@ -2,7 +2,7 @@
 
 AnimatedTextGenerator is a simple gui tool to generate webpages with animated text to import them as webview in obs studio or similar programs 
 
-you can download a builded version [here](http://billyexe.wtf/AnimatedTextGenerator/AnimatedTextGenerator.exe)
+you can download a builded version [here](https://billyexe.wtf/AnimatedTextGenerator/AnimatedTextGenerator.exe)
 
 V0.1
 
